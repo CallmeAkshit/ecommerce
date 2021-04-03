@@ -12,6 +12,11 @@ const userSchema = new Schema({
         required: true,
         unique: true
     },
+    Mobile: {
+        type: Number,
+        required: true,
+        unique: true
+    },
     firstName: String,
     lastName: String,
     address:{
@@ -26,6 +31,11 @@ const userSchema = new Schema({
             unique: true
         },
         City:{
+            type: String,
+            //required: true,
+            unique: true
+        },
+        State:{
             type: String,
             //required: true,
             unique: true
